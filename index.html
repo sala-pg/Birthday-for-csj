@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday CSJs 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffe4e1, #fff0f5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+
+    .heart {
+      font-size: 2rem;
+      color: red;
+      animation: beat 1s infinite;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-style: italic;
+      color: #888;
+    }
+
+    .card {
+      background-color: #ffffffcc;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    audio {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h1>Happy Birthday, CSJs!</h1>
+    <p>
+      On your special day, I just want you to know how much you mean to me. <br>
+      Thank you for being an amazing friend — kind, funny, and truly irreplaceable. <br>
+      Here's to more laughs, memories, and moments we’ll never forget.  
+    </p>
+    <p class="footer">With love, <br>your bestie 💖</p>
+    <audio controls autoplay loop>
+      <source src="https://cdn.pixabay.com/audio/2023/05/18/audio_b36d4984fd.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</body>
+</html>
