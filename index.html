@@ -56,8 +56,20 @@
       backdrop-filter: blur(10px);
     }
 
-    audio {
-      margin-top: 2rem;
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #ffb6c1;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      color: #fff;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff69b4;
     }
   </style>
 </head>
@@ -70,8 +82,9 @@
       Thank you for being an amazing friend — kind, funny, and truly irreplaceable. <br>
       Here's to more laughs, memories, and moments we’ll never forget.  
     </p>
+    <button onclick="document.getElementById('bgmusic').play()">▶️ Play Music</button>
     <p class="footer">With love, <br>your bestie 💖</p>
-    <audio controls autoplay loop>
+    <audio id="bgmusic" loop>
       <source src="https://cdn.pixabay.com/audio/2023/05/18/audio_b36d4984fd.mp3" type="audio/mp3">
       Your browser does not support the audio element.
     </audio>
